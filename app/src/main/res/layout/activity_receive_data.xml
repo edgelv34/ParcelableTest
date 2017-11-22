@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="parkwow13.edgelv34.parcelabletest.ReceiveDataActivity">
+
+    <TextView
+        android:id="@+id/receive_data1_fix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="data1 : "
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/receive_data1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아직 데이터가 들어오지 않았습니다."
+        app:layout_constraintLeft_toRightOf="@id/receive_data1_fix"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/receive_data2_fix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/receive_data1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="data2 : "
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/receive_data2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아직 데이터가 들어오지 않았습니다."
+        app:layout_constraintLeft_toRightOf="@id/receive_data2_fix"
+        app:layout_constraintTop_toBottomOf="@id/receive_data1"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/receive_data3_fix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/receive_data2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="data3 : "
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/receive_data3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아직 데이터가 들어오지 않았습니다."
+        app:layout_constraintLeft_toRightOf="@id/receive_data3_fix"
+        app:layout_constraintTop_toBottomOf="@id/receive_data2"
+        android:layout_marginTop="30dp"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

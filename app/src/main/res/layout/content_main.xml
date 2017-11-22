@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="parkwow13.edgelv34.parcelabletest.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아래의 EditText에 전달 할 데이터를 삽입해주세요"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#4169e1"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_data1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextInputLayoutAppear"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/lm_find_data1_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="첫 번째 데이터"
+                android:textSize="@dimen/normal_text_size"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_data2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextInputLayoutAppear">
+
+            <EditText
+                android:id="@+id/lm_find_data2_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="두 번째 데이터"
+                android:textSize="@dimen/normal_text_size"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_data3_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextInputLayoutAppear">
+
+            <EditText
+                android:id="@+id/lm_find_data3_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="세 번째 데이터"
+                android:textSize="@dimen/normal_text_size"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/send_data_btn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="#4169e1"
+            android:layout_gravity="center_horizontal"
+            android:text="데이터 전달"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
